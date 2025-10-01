@@ -1,0 +1,16 @@
+# Web-app
+streamlit>=1.32.0
+
+# Datahåndtering
+pandas>=2.2.0
+numpy>=1.26.0
+
+# Maskinlæring
+scikit-learn>=1.4.0
+joblib>=1.3.0
+
+# Visualisering
+matplotlib>=3.8.0
+
+# PDF-generering
+reportlab>=4.1.0

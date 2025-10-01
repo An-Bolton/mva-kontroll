@@ -371,14 +371,12 @@ def get_synthetic_dataset():
     ]
     return pd.DataFrame(data)
 
-
-
 # -----------------------------
 # Tabs med emoji
 # -----------------------------
 tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "🏠 Hjem",
-    "🤖 Tren modell",
+    "🤖 Tren modellen",
     "📂 Vurder filer",
     "ℹ️ Om",
     "🧪 Test med syntetiske data"
@@ -387,7 +385,7 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs([
 with tab1:
     st.title("Velkommen til MVA-kontroll prototypen")
     st.write(
-        "Bruk gjerne fanene øverst for å trene modell, vurdere filer, teste med syntetiske data eller lese mer om løsningen.")
+        "Her kan du gjerne bruke fanene øverst for å trene modellen, vurdere filer, teste med syntetiske data eller lese mer om løsningen under Om-fanen i menyen. :)")
 
 with tab2:
     model_type = st.selectbox("Modelltype", ["gb", "logreg"],
@@ -467,11 +465,11 @@ with tab4:
     for å flagge potensielle feil i MVA-rapportering.
 
     ### Metoder som er brukt her
-    - **Logistisk regresjon**: En klassisk statistisk metode som estimerer sannsynligheten for at MVA er korrekt.
-    - **Gradient Boosting**: En kraftigere ensemble-metode som bygger mange små beslutningstrær i sekvens.
+    - **Logistisk regresjon**: Dette her er en klassisk statistisk metode som estimerer sannsynligheten for at MVA er korrekt.
+    - **Gradient Boosting**: Dette er en en kraftigere "ensemble-metode" som bygger mange små beslutningstrær i sekvens.
       Hvert nytt tre prøver å rette opp feilene fra de foregående, slik at modellen gradvis blir mer presis.
 
-    ### Hva man får
+    ### Hva man får her:
     - Risiko-score for hvert bilag
     - Automatisert splitting mellom bilag til saksbehandler og automatisk varsling
     - Rapporter i CSV + PDF (brev og grafer)

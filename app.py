@@ -19,12 +19,6 @@ import matplotlib.pyplot as plt
 
 # streamlit_mva_checker.py (med valgfri logo i PDF for manglende kolonner)
 
-# ... (imports og config som før)
-
-# streamlit_mva_checker.py (med valgfri logo i PDF for manglende kolonner)
-
-# ... (imports og config som før)
-
 from reportlab.lib.pagesizes import A4
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image
 from reportlab.lib.styles import getSampleStyleSheet
@@ -385,7 +379,7 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs([
 with tab1:
     st.title("Velkommen til MVA-kontroll prototypen")
     st.write(
-        "Her kan du gjerne bruke fanene øverst for å trene modellen, vurdere filer, teste med syntetiske data eller lese mer om løsningen under Om-fanen i menyen. :)")
+        "I menyen her kan du gjerne bruke fanene øverst for å trene modellen, vurdere filer, teste med syntetiske data eller lese mer om løsningen under Om-fanen.:)")
 
 with tab2:
     model_type = st.selectbox("Modelltype", ["gb", "logreg"],
@@ -477,9 +471,9 @@ with tab4:
     - Varselsymboler (✅, ⚠️, 🚨) med fargekoding (grønn/gul/rød) for enkel visuell tolkning
     - Fordeling av varsler både som stolpediagram og kakediagram
 
-    ⚠️ Merk: Dette er kun en **faglig prototype** og ikke en faktisk skattekontroll.
+    ⚠️ Merk: Dette er kun en **faglig prototype** og ikke en faktisk skattekontroll. Denne appen er kun laget i forbindelse med et regnskapsfag på NMBU av Andreas Bolton Seielstad.
     """)
-# ... (samme kode som før frem til tab5)
+# ...
 
 with tab5:
     st.title("Test med syntetiske data")
